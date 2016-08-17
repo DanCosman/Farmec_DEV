@@ -10,7 +10,7 @@ Feature: Checkout
       And I click on link with text "Balsam hidratant"
       And I click on link with text "Adaugă în coş"
       And I click on button with text "Finalizează comanda acum "
-      And I wait 1 seconds
+      And I wait 5 seconds
       And I click on  button2 with text "Finalizează comanda "
       And I click on link with text "Continuare"
       And I wait 1 seconds
