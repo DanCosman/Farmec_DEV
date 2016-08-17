@@ -10,21 +10,19 @@ Feature: Login
   Scenario: Login with wrong password
     Given I open url"https://dev2.farmec.ro/autentificare.html"
     And I login with "testare1984@gmail.com"/"wrong password"
-    Then I should see an element with text "Adresă de email sau parolă incorectă"
+    Then I should see an element with text "Adresa de email sau parola incorecta"
 
   Scenario: Login with wrong email address
-     Given I open url"https://dev2.farmec.ro/autentificare.html"
-     And I login with "testare1984@gmail.com"/"wrong password"
-     Then I should see an element with text "Adresă de email sau parolă incorectă"
+    Given I open url"https://dev2.farmec.ro/autentificare.html"
+    And I login with "testare1984@gmail.com"/"wrong password"
+    Then I should see an element with text "Adresa de email sau parola incorecta"
 
   Scenario: Login with empty email field
     Given I open url"https://dev2.farmec.ro/autentificare.html"
     And I login with ""/"parola"
-    Then I should see an element with text "Acest câmp este obligatoriu."
+    Then I should see an element with text "Acest c‚mp este obligatoriu."
 
   Scenario: Login with empty password field
     Given I open url"https://dev2.farmec.ro/autentificare.html"
     And I login with "testare1985@gmail.com"/""
-    Then I should see an element with text "Acest câmp este obligatoriu."
-
-
+    Then I should see an element with text "Acest c‚mp este obligatoriu."
