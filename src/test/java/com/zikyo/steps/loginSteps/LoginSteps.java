@@ -15,7 +15,7 @@ public class LoginSteps {
     public void iLoginWith(String email, String pass) throws Throwable {
         WebLocator element = new WebLocator().setText("Ionut Pop");
         WebLocator elementT = new WebLocator().setText("Utilizator nou");
-        if (elementT.assertExists())
+        if (elementT.ready(1000))
         {
             loginPage.doLogin(email, pass);
         }
