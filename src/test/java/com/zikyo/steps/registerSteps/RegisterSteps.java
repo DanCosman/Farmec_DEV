@@ -11,17 +11,11 @@ import cucumber.api.java.en.And;
 public class RegisterSteps {
     private RegisterView registerView = new RegisterView();
 
-
-
-
-
     @And("^I select gender from the drop-down$")
     public void iSelectGenderFromTheDropDown()  {
         ComboBox genderList = new ComboBox().setId("sex");
         registerView.getSexField().select("Masculin");
-
     }
-
 
     @And("^I select skin-type$")
     public void iSelectSkinType() throws Throwable {
@@ -35,7 +29,6 @@ public class RegisterSteps {
         registerView.getHairField().select("Cu mătreaţă");
 
     }
-
 
     @And("^I type into captcha field$")
     public void iTypeIntoCaptchaField()  {

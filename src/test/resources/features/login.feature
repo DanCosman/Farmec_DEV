@@ -5,7 +5,6 @@ Feature: Login
     And I login with "testare1984@gmail.com"/"parola"
     Then I should see an element with text "Contul meu"
 
-
   Scenario: Login with wrong password
     Given I open url"https://dev2.farmec.ro/autentificare.html"
     And I login with "testare1984@gmail.com"/"wrong password"

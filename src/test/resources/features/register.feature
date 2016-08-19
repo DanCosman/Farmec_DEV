@@ -3,22 +3,27 @@
 
     Scenario: Register Successful
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
-      And I type "testare1984+102@gmail.com" into "account-email" with id
-      And I type "testare1984+102@gmail.com" into "confirm-email" with id
+      And I open url"https://dev2.farmec.ro/autentificare.html?action=logout"
+      And I open url"https://dev2.farmec.ro/cont-nou.html"
+      And I type "testare1984+103@gmail.com" into "account-email" with id
+      And I type "testare1984+103@gmail.com" into "confirm-email" with id
       And I type "parola" into "account-password" with id
       And I type "parola" into "confirm-password" with id
+      And I click on  button2 with text "Am inteles"
       And I type "Pop" into "last-name" with id
-      And I type "Ionnut" into "first-name" with id
+      And I type "Ionut" into "first-name" with id
       And I complete birthdate
       And I select gender from the drop-down
       And I select skin-type
       And I select hair-type
       And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I wait 3 seconds
       And I type into captcha field
+      And I wait 3 seconds
       And I click on button with text "Înregistrează-te"
-      Then I should see an element with text "Contul meu"
-
-
+      And I wait 3 seconds
+      And I open url"https://dev2.farmec.ro/modificare-cont.html"
+      And I click on  button2 with text "Şterge cont"
 
     Scenario: Register without confirm the same address email
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
@@ -36,8 +41,6 @@
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       Then I should see an element with text "Te rugăm să introduci o adresă de email validă"
-
-
 
     Scenario: Register without confirm the same password
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
@@ -124,7 +127,6 @@
       And I should see an element with text "Contul meu"
       Then  I should see an element with text "Acest câmp este obligatoriu."
 
-
     Scenario: Register without select skin type
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
       And I type "testare1984@gmail.com" into "account-email" with id
@@ -141,7 +143,6 @@
       And I click on button with text "Înregistrează-te"
       And I should see an element with text "Contul meu"
       Then I should see an element with text "Acest câmp este obligatoriu."
-
 
     Scenario: Register without select hair type
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
@@ -177,7 +178,6 @@
       And I should see an element with text "Contul meu"
       Then I should see an element with text "Te rugăm să confirmi că ai luat la cunoștință "
 
-
     Scenario: Register without complete captcha field
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
       And I type "testare1984@gmail.com" into "account-email" with id
@@ -193,7 +193,3 @@
       And I click on label "Sunt de acord şi am luat la cunoştinţă "
       And I click on button with text "Înregistrează-te"
       Then I should see an element with text "Acest câmp este obligatoriu."
-
-
-
-
