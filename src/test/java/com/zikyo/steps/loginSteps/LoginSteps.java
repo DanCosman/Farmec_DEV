@@ -19,7 +19,7 @@ public class LoginSteps {
         {
             loginPage.doLogin(email, pass);
         }
-        else if (element.assertReady()){
+        else {
             WebDriverConfig.getDriver().navigate().to("https://dev2.farmec.ro/autentificare.html?action=logout");
             loginPage.doLogin(email, pass);
         }
