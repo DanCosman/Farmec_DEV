@@ -31,7 +31,7 @@ Feature: Checkout
     And I click on  button2 with text "Finalizează "
     And I login with "testare1984@gmail.com"/"parola"
     And I wait 2 seconds
-    And I click on  button2 with text "Finalizează "
+    And I click on link with text "Finalizează "
     And I click on label "Sunt de acord şi am luat la cunoştinţă "
     And I click on link with text "Finalizează"
     And I fill in credit card information
