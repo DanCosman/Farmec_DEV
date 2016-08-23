@@ -20,7 +20,7 @@ Feature: Checkout
     And I click on link with text "Finalizează "
     Then I should see an element with text "Finalizare comandă"
 
-  Scenario: Checkout without login when the user enter on the web site
+  Scenario: Checkout without login whaen the user enter on the web site
     Given I open url"https://dev2.farmec.ro/"
     And I wait 2 seconds
     And I click on element with text "Produse noi"
@@ -31,15 +31,10 @@ Feature: Checkout
     And I click on  button2 with text "Finalizează "
     And I login with "testare1984@gmail.com"/"parola"
     And I wait 2 seconds
-    And I click on  label "Editează" with class
-    And I click on link with text "Continuare"
-    And I wait 2 seconds
-    And I click on link with text "Continuare"
-    And I click on label "Online cu card bancar"
-    And I click on link with text "Continuare"
     And I click on label "Sunt de acord şi am luat la cunoştinţă "
-    And I click on link with text "Finalizează"
+    And I click on link with text2 "Finalizează"
     And I fill in credit card information
+    And I wait 10 seconds
 
   Scenario: Checkout with payment order
     Given I open url"https://dev2.farmec.ro/autentificare.html"
