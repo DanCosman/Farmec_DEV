@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
 monochrome = true,
-        plugin =  {"rerun", "html:target/cucumber","json:target/jsonReports/"},
+        plugin =  {"rerun", "html:target/cucumber"},
         glue = {
         "com.zikyo"
         },
