@@ -20,6 +20,7 @@ Feature: Checkout
       And I click on label "Sunt de acord şi am luat la cunoştinţă "
       And I click on link with text "Finalizează"
       And I fill in credit card information
+      And I open url"https://dev2.farmec.ro/autentificare.html"
 
   Scenario: Checkout with cash courier
      Given I open url"https://dev2.farmec.ro/autentificare.html"
