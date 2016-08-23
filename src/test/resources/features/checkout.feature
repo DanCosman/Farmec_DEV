@@ -23,7 +23,7 @@ Feature: Checkout
 
   Scenario: Checkout with cash courier
      Given I open url"https://dev2.farmec.ro/autentificare.html"
-     And I wait 2 seconds
+     And I should see an element with text "Adresa de email "
      And I login with "testare1984@gmail.com"/"parola"
      And I click on element with text "Produse noi"
      And I click on link with text "Mască regenerantă"
@@ -42,7 +42,6 @@ Feature: Checkout
 
   Scenario: Checkout with paymet order
     Given I open url"https://dev2.farmec.ro/autentificare.html"
-    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Mască regenerantă"
@@ -80,7 +79,6 @@ Feature: Checkout
 
   Scenario: Checkout with wrong card number
     Given I open url"https://dev2.farmec.ro/autentificare.html"
-    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Balsam hidratant"
@@ -99,7 +97,6 @@ Feature: Checkout
 
   Scenario: Checkout with empty cvc
     Given I open url"https://dev2.farmec.ro/autentificare.html"
-    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Balsam hidratant"
@@ -118,7 +115,6 @@ Feature: Checkout
 
   Scenario: Checkout with wrong year field
     Given I open url"https://dev2.farmec.ro/autentificare.html"
-    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Balsam hidratant"
@@ -137,7 +133,6 @@ Feature: Checkout
 
   Scenario: Checkout with empty card type field
     Given I open url"https://dev2.farmec.ro/autentificare.html"
-    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Balsam hidratant"
