@@ -62,7 +62,7 @@ Feature: Checkout
   Scenario: Checkout without login when the user enter on the web site
     Given I open url"https://dev2.farmec.ro/"
     And I click on element with text "Produse noi"
-    And I wait 2 seconds
+    And I wait 1 seconds
     And I click on link with text "Cremă corp pentru piele uscată"
     And I click on link with text "Adaugă în coş"
     And I click on button with text "Finalizează comanda acum "
