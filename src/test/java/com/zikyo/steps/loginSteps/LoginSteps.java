@@ -1,9 +1,10 @@
 package com.zikyo.steps.loginSteps;
 
-import com.sdl.selenium.utils.config.WebDriverConfig;
 import com.sdl.selenium.web.WebLocator;
 import com.zikyo.utils.Farmec.LoginPage;
 import cucumber.api.java.en.When;
+
+import static com.sdl.selenium.utils.config.WebDriverConfig.getDriver;
 
 /**
  * Created by Sica-sama on 7/20/2016.
@@ -15,12 +16,12 @@ public class LoginSteps {
     public void iLoginWith(String email, String pass) throws Throwable {
         WebLocator element = new WebLocator().setText("Ionut Pop");
         WebLocator elementT = new WebLocator().setText("Utilizator nou");
-        if (elementT.ready(1000))
+        if (elementT.isVisible())
         {
             loginPage.doLogin(email, pass);
         }
         else {
-            WebDriverConfig.getDriver().navigate().to("https://dev2.farmec.ro/autentificare.html?action=logout");
+            getDriver().navigate().to("https://dev2.farmec.ro/autentificare.html?action=logout");
             loginPage.doLogin(email, pass);
         }
     }
