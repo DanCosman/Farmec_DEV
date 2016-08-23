@@ -4,6 +4,7 @@ Feature: Checkout
 
   Scenario: Checkout successful
       Given I open url"https://dev2.farmec.ro/autentificare.html"
+      And I wait 2 seconds
       And I login with "testare1984@gmail.com"/"parola"
       And I click on element with text "Produse noi"
       And I click on link with text "Balsam hidratant"
@@ -20,9 +21,9 @@ Feature: Checkout
       And I click on link with text "Finalizează"
       And I fill in credit card information
 
-
   Scenario: Checkout with cash courier
      Given I open url"https://dev2.farmec.ro/autentificare.html"
+     And I wait 2 seconds
      And I login with "testare1984@gmail.com"/"parola"
      And I click on element with text "Produse noi"
      And I click on link with text "Mască regenerantă"
@@ -39,9 +40,9 @@ Feature: Checkout
      And I click on link with text "Finalizează "
      Then I should see an element with text "Finalizare comandă"
 
-
   Scenario: Checkout with paymet order
     Given I open url"https://dev2.farmec.ro/autentificare.html"
+    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Mască regenerantă"
@@ -57,7 +58,6 @@ Feature: Checkout
     And I click on label "Sunt de acord şi am luat la cunoştinţă "
     And I click on link with text "Finalizează"
     Then I should see an element with text "Finalizare comandă"
-
 
   Scenario: Checkout without login when the user enter on the web site
     Given I open url"https://dev2.farmec.ro/"
@@ -78,10 +78,9 @@ Feature: Checkout
     And I click on link with text "Finalizează"
     And I fill in credit card information
 
-
-
-  Scenario: Checkout with card number wrong
+  Scenario: Checkout with wrong card number
     Given I open url"https://dev2.farmec.ro/autentificare.html"
+    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Balsam hidratant"
@@ -98,9 +97,9 @@ Feature: Checkout
     And I click on link with text "Finalizează "
     And I fill in card number "6778", cvc "555", month "05 Mai", year "2020" and card type "Maestro"
 
-
   Scenario: Checkout with empty cvc
     Given I open url"https://dev2.farmec.ro/autentificare.html"
+    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Balsam hidratant"
@@ -117,13 +116,9 @@ Feature: Checkout
     And I click on link with text "Finalizează "
     And I fill in card number "677899999", cvc "", month "05 Mai", year "2020" and card type "Maestro"
 
-
-
-
-
-
   Scenario: Checkout with wrong year field
     Given I open url"https://dev2.farmec.ro/autentificare.html"
+    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Balsam hidratant"
@@ -139,10 +134,10 @@ Feature: Checkout
     And I click on label "Sunt de acord şi am luat la cunoştinţă "
     And I click on link with text "Finalizează "
     And I fill in card number "677899999", cvc "555", month "05 Mai", year "2015" and card type "Maestro"
-
 
   Scenario: Checkout with empty card type field
     Given I open url"https://dev2.farmec.ro/autentificare.html"
+    And I wait 2 seconds
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
     And I click on link with text "Balsam hidratant"
@@ -158,6 +153,3 @@ Feature: Checkout
     And I click on label "Sunt de acord şi am luat la cunoştinţă "
     And I click on link with text "Finalizează "
     And I fill in card number "677899999", cvc "555", month "05 Mai", year "2015" and card type "Maestro"
-
-
-

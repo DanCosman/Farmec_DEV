@@ -327,7 +327,6 @@ public class GenericSteps extends TestBase {
         sleep(5);
     }
 
-
     public static void main(String[] args) {
         Button finalc = new Button().setText("Finalizează comanda").setClasses("top-margin-small");
         System.out.println(finalc.getXPath());

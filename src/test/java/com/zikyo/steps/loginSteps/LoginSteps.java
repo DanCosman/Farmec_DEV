@@ -14,7 +14,6 @@ public class LoginSteps {
 
     @When("^I login with \"([^\"]*)\"/\"([^\"]*)\"$")
     public void iLoginWith(String email, String pass) throws Throwable {
-        WebLocator element = new WebLocator().setText("Ionut Pop");
         WebLocator elementT = new WebLocator().setText("Utilizator nou");
         if (elementT.isVisible())
         {
