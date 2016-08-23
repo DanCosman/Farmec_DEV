@@ -14,5 +14,6 @@ monochrome = true,
         },
 
         features = "src/test/resources/features/checkout.feature")
+
 public class CheckoutRunnerTest {
 }

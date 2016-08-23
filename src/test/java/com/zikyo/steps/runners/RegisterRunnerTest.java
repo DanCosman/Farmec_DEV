@@ -14,5 +14,6 @@ monochrome = true,
         },
 
         features = "src/test/resources/features/register.feature")
+
 public class RegisterRunnerTest {
 }
