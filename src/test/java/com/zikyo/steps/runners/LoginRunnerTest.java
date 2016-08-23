@@ -8,11 +8,11 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
 monochrome = true,
-        plugin =  {"html:target/cucumber","json:target/jsonReports/LoginTest.json"},
+        plugin =  {"rerun", "html:target/cucumber","json:target/jsonReports/LoginTest.json"},
         glue = {
         "com.zikyo"
         },
 
-        features = "src/test/resources/features/login.feature")
+        features = "src/test/resources/features")
 public class LoginRunnerTest {
 }
