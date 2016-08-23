@@ -40,7 +40,7 @@ Feature: Checkout
      And I click on link with text "Finalizează "
      Then I should see an element with text "Finalizare comandă"
 
-  Scenario: Checkout with paymet order
+  Scenario: Checkout with payment order
     Given I open url"https://dev2.farmec.ro/autentificare.html"
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"

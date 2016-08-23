@@ -5,8 +5,8 @@
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
       And I open url"https://dev2.farmec.ro/autentificare.html?action=logout"
       And I open url"https://dev2.farmec.ro/cont-nou.html"
-      And I type "testare1984+103@gmail.com" into "account-email" with id
-      And I type "testare1984+103@gmail.com" into "confirm-email" with id
+      And I type "testare1984+105@gmail.com" into "account-email" with id
+      And I type "testare1984+105@gmail.com" into "confirm-email" with id
       And I type "parola" into "account-password" with id
       And I type "parola" into "confirm-password" with id
       And I type "Pop" into "last-name" with id
@@ -22,7 +22,9 @@
       And I click on button with text "Înregistrează-te"
       And I wait 3 seconds
       And I open url"https://dev2.farmec.ro/modificare-cont.html"
-      And I click on  button2 with text "Şterge cont"
+      And I click on link with text "Şterge cont"
+      And I click on label "Doresc să îmi şterg contul Farmec"
+      And I click on button with text "Şterge"
 
     Scenario: Register without confirm the same address email
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
