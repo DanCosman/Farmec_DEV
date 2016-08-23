@@ -5,16 +5,6 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-
-@CucumberOptions(
-        monochrome = true,
-        plugin =  {"rerun", "html:target/cucumber","json:target/jsonReports/LoginTest.json"},
-        glue = {
-                "com.zikyo"
-        },
-        features = {
-                "src/test/resources/features/login.feature",
-        }
-)
+@CucumberOptions (features = "src/test/resources/features/")
 public class LoginRunnerTest {
 }
