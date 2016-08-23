@@ -22,6 +22,7 @@ public class LoginSteps {
         }
         else {
             getDriver().navigate().to("https://dev2.farmec.ro/autentificare.html?action=logout");
+            getDriver().navigate().to("https://dev2.farmec.ro/autentificare.html");
             loginPage.doLogin(email, pass);
         }
     }
