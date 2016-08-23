@@ -9,7 +9,6 @@
       And I type "testare1984+103@gmail.com" into "confirm-email" with id
       And I type "parola" into "account-password" with id
       And I type "parola" into "confirm-password" with id
-      And I click on  button2 with text "Am inteles"
       And I type "Pop" into "last-name" with id
       And I type "Ionut" into "first-name" with id
       And I complete birthdate
