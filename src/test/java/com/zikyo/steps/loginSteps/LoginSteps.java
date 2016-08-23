@@ -17,6 +17,7 @@ public class LoginSteps {
         WebLocator elementT = new WebLocator().setText("Utilizator nou");
         if (elementT.isVisible())
         {
+            getDriver().navigate().to("https://dev2.farmec.ro/autentificare.html");
             loginPage.doLogin(email, pass);
         }
         else {
