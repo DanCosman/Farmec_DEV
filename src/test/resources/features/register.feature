@@ -5,8 +5,8 @@
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
       And I open url"https://dev2.farmec.ro/autentificare.html?action=logout"
       And I open url"https://dev2.farmec.ro/cont-nou.html"
-      And I type "testare1984+105@gmail.com" into "account-email" with id
-      And I type "testare1984+105@gmail.com" into "confirm-email" with id
+      And I type "testare1984+111@gmail.com" into "account-email" with id
+      And I type "testare1984+111@gmail.com" into "confirm-email" with id
       And I type "parola" into "account-password" with id
       And I type "parola" into "confirm-password" with id
       And I type "Pop" into "last-name" with id
