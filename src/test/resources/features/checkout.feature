@@ -3,6 +3,7 @@ Feature: Checkout
 
   Scenario: Checkout with cash courier
     Given I open url"https://dev2.farmec.ro/autentificare.html"
+    And I click on button with text "Am înţeles"
     And I should see an element with text "Adresa de email "
     And I login with "testare1984@gmail.com"/"parola"
     And I click on element with text "Produse noi"
