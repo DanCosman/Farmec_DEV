@@ -15,6 +15,7 @@
       And I select gender from the drop-down
       And I select skin-type
       And I select hair-type
+      And I click on button with text "Am înţeles"
       And I click on label "Sunt de acord şi am luat la cunoştinţă "
       And I wait 3 seconds
       And I type into captcha field
