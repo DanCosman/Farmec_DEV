@@ -15,7 +15,6 @@ public class MyCreditCardSteps {
     public void iFillInCreditCardInformation()  {
         TestUtils.switchToIframe();
         cardView.setValues("4111111111111111","555","05 Mai","2020","Maestro");
-
     }
 
     @And("^I fill in card number \"([^\"]*)\", cvc \"([^\"]*)\", month \"([^\"]*)\", year \"([^\"]*)\" and card type \"([^\"]*)\"$")

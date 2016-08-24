@@ -36,6 +36,7 @@ Feature: Checkout
     And I click on  button2 with text "Finalizează "
     And I click on label "Sunt de acord şi am luat la cunoştinţă "
     And I click on link with text "Finalizează"
+    And I wait 2 seconds
     And I fill in credit card information
 
   Scenario: Checkout with payment order
