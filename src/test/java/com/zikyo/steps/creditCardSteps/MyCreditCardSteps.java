@@ -23,7 +23,6 @@ public class MyCreditCardSteps {
         cardView.setValues(cardNumber, cvc, month, year, type);
     }
 
-
     @And("^I click on  label \"([^\"]*)\" with class$")
     public void iClickOnLabelWithClass(String arg0) {
         WebLocator editSpan = new WebLocator("pull-right edit").setText("Editează");

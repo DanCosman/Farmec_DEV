@@ -1,7 +1,7 @@
 @screen
   Feature: Register
 
-    Scenario: Register Successful
+    Scenario: Register p;lvvnnmczszxdSuccessful
       Given I open url"https://dev2.farmec.ro/cont-nou.html"
       And I open url"https://dev2.farmec.ro/autentificare.html?action=logout"
       And I open url"https://dev2.farmec.ro/cont-nou.html"
