@@ -51,6 +51,13 @@ public class GenericSteps extends TestBase {
         link.assertClick();
     }
 
+    @And("^I click on Outlet$")
+    public void biClickOnOutlet() {
+        WebLocator linkO = new WebLocator("image category text-center");
+        linkO.click();
+    }
+
+
     //public static void main(String[] args) {
     //WebLink link = new WebLink().setText("Adviser", SearchType.TRIM, SearchType.EQUALS, SearchType.CHILD_NODE);
     //System.out.println(link.getXPath());
@@ -100,7 +107,7 @@ public class GenericSteps extends TestBase {
 
     @When("^I click on  button2 with text \"([^\"]*)\"$")
     public void I_click_on_button2_with_text(String text) {
-        Button button = new Button().setText(text).setClasses("top-margin-small");;
+        Button button = new Button().setText(text).setClasses("top-margin-small");
         button.click();
     }
 

@@ -68,11 +68,11 @@ Feature: Checkout
       Given I open url"https://dev2.farmec.ro/autentificare.html"
       And I wait 2 seconds
       And I login with "testare1984@gmail.com"/"parola"
-    And I click on element with text "Toate produsele"
-    And I wait 2 seconds
-    And I click on Outlet
-    And I click on link with text "Kit regenerare păr"
-    And I wait 2 seconds
+      And I click on element with text "Toate produsele"
+      And I wait 2 seconds
+      And I click on Outlet
+      And I click on link with text "Kit regenerare păr"
+      And I wait 2 seconds
       And I click on link with text "Adaugă în coş"
       And I click on button with text "Finalizează comanda acum "
       And I click on  button2 with text "Finalizează "
