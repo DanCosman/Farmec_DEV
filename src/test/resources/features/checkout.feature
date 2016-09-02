@@ -10,6 +10,7 @@ Feature: Checkout
     And I click on element with text "Toate produsele"
     And I wait 2 seconds
     And I click on Outlet
+    And I wait 2 seconds
     And I click on link with text "Kit regenerare păr"
     And I wait 2 seconds
     And I click on link with text "Adaugă în coş"
@@ -32,6 +33,7 @@ Feature: Checkout
     And I click on element with text "Toate produsele"
     And I wait 2 seconds
     And I click on Outlet
+    And I wait 2 seconds
     And I click on link with text "Kit regenerare păr"
     And I wait 2 seconds
     And I click on link with text "Adaugă în coş"
@@ -49,6 +51,7 @@ Feature: Checkout
     And I click on element with text "Toate produsele"
     And I wait 2 seconds
     And I click on Outlet
+    And I wait 2 seconds
     And I click on link with text "Kit regenerare păr"
     And I wait 2 seconds
     And I click on link with text "Adaugă în coş"
@@ -71,7 +74,8 @@ Feature: Checkout
       And I click on element with text "Toate produsele"
       And I wait 2 seconds
       And I click on Outlet
-      And I click on link with text "Kit regenerare păr"
+      And I wait 2 seconds
+     And I click on link with text "Kit regenerare păr"
       And I wait 2 seconds
       And I click on link with text "Adaugă în coş"
       And I click on button with text "Finalizează comanda acum "
