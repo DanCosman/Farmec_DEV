@@ -7,8 +7,11 @@ Feature: Checkout
     And I click on button with text "Am înţeles"
     And I should see an element with text "Adresa de email "
     And I login with "testare1984@gmail.com"/"parola"
-    And I click on element with text "Produse noi"
-    And I click on link with text "Mască regenerantă"
+    And I click on element with text "Toate produsele"
+    And I wait 2 seconds
+    And I click on Outlet
+    And I click on link with text "Kit regenerare păr"
+    And I wait 2 seconds
     And I click on link with text "Adaugă în coş"
     And I click on button with text "Finalizează comanda acum "
     And I click on  button2 with text "Finalizează"
@@ -43,8 +46,11 @@ Feature: Checkout
   Scenario: Checkout with payment order
     Given I open url"https://dev2.farmec.ro/autentificare.html"
     And I login with "testare1984@gmail.com"/"parola"
-    And I click on element with text "Produse noi"
-    And I click on link with text "Mască regenerantă"
+    And I click on element with text "Toate produsele"
+    And I wait 2 seconds
+    And I click on Outlet
+    And I click on link with text "Kit regenerare păr"
+    And I wait 2 seconds
     And I click on link with text "Adaugă în coş"
     And I click on button with text "Finalizează comanda acum "
     And I click on  button2 with text "Finalizează"
@@ -62,8 +68,11 @@ Feature: Checkout
       Given I open url"https://dev2.farmec.ro/autentificare.html"
       And I wait 2 seconds
       And I login with "testare1984@gmail.com"/"parola"
-      And I click on element with text "Produse noi"
-      And I click on link with text "Balsam hidratant"
+    And I click on element with text "Toate produsele"
+    And I wait 2 seconds
+    And I click on Outlet
+    And I click on link with text "Kit regenerare păr"
+    And I wait 2 seconds
       And I click on link with text "Adaugă în coş"
       And I click on button with text "Finalizează comanda acum "
       And I click on  button2 with text "Finalizează "
