@@ -22,7 +22,7 @@ Feature: Checkout
     And I click on link with text "Continuare"
     And I click on label "Ramburs prin curier"
     And I click on link with text "Continuare"
-    And I click on label "Sunt de acord şi am luat la cunoştinţă "
+    And I click on label with id "agree-wrapper"
     And I click on link with text "Finalizează "
     Then I should see an element with text "Finalizare comandă"
 
@@ -40,7 +40,7 @@ Feature: Checkout
     And I click on button with text "Finalizează comanda acum "
     And I click on  button2 with text "Finalizează "
     And I login with "testare1984@gmail.com"/"parola"
-    And I click on label "Sunt de acord şi am luat la cunoştinţă "
+    And I click on label with id "agree-wrapper"
     And I click on link with text "Finalizează"
     And I wait 2 seconds
     And I fill in credit card information
@@ -63,7 +63,7 @@ Feature: Checkout
     And I click on link with text "Continuare"
     And I click on label "Ordin de plată"
     And I click on link with text "Continuare"
-    And I click on label "Sunt de acord şi am luat la cunoştinţă "
+    And I click on label with id "agree-wrapper"
     And I click on link with text "Finalizează"
     Then I should see an element with text "Finalizare comandă"
 
@@ -75,7 +75,7 @@ Feature: Checkout
       And I wait 2 seconds
       And I click on Outlet
       And I wait 2 seconds
-     And I click on link with text "Kit regenerare păr"
+      And I click on link with text "Kit regenerare păr"
       And I wait 2 seconds
       And I click on link with text "Adaugă în coş"
       And I click on button with text "Finalizează comanda acum "
@@ -87,7 +87,7 @@ Feature: Checkout
       And I click on label "Online cu card bancar"
       And I click on link with text "Continuare"
       And I wait 2 seconds
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I click on link with text "Finalizează"
       And I fill in credit card information
 

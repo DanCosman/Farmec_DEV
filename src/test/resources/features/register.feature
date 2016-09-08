@@ -16,13 +16,13 @@
       And I select skin-type
       And I select hair-type
       And I click on button with text "Am înţeles"
-      And I wait 3 seconds
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
-      And I wait 3 seconds
+      And I wait 1 seconds
+      And I click on label with id "agree-wrapper"
+      And I wait 1 seconds
       And I type into captcha field
-      And I wait 3 seconds
+      And I wait 1 seconds
       And I click on button with text "Înregistrează-te"
-      And I wait 3 seconds
+      And I wait 1 seconds
       And I open url"https://dev2.farmec.ro/modificare-cont.html"
       And I click on link with text "Şterge cont"
       And I click on label "Doresc să îmi şterg contul Farmec"
@@ -41,7 +41,7 @@
       And I select gender from the drop-down
       And I select skin-type
       And I select hair-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       Then I should see an element with text "Te rugăm să introduci o adresă de email validă"
@@ -58,7 +58,7 @@
       And I select gender from the drop-down
       And I select skin-type
       And I select hair-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       Then I should see an element with text "Parolele trebuie să fie identice"
@@ -74,7 +74,7 @@
       And I select gender from the drop-down
       And I select skin-type
       And I select hair-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       And I should see an element with text "Contul meu"
@@ -91,7 +91,7 @@
       And I select gender from the drop-down
       And I select skin-type
       And I select hair-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       And I should see an element with text "Contul meu"
@@ -108,7 +108,7 @@
       And I select gender from the drop-down
       And I select skin-type
       And I select hair-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       And I should see an element with text "Contul meu"
@@ -125,7 +125,7 @@
       And I complete birthdate
       And I select skin-type
       And I select hair-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       And I should see an element with text "Contul meu"
@@ -142,7 +142,7 @@
       And I complete birthdate
       And I select gender from the drop-down
       And I select hair-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       And I should see an element with text "Contul meu"
@@ -159,7 +159,7 @@
       And I complete birthdate
       And I select gender from the drop-down
       And I select skin-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I type into captcha field
       And I click on button with text "Înregistrează-te"
       And I should see an element with text "Contul meu"
@@ -194,6 +194,6 @@
       And I select gender from the drop-down
       And I select skin-type
       And I select hair-type
-      And I click on label "Sunt de acord şi am luat la cunoştinţă "
+      And I click on label with id "agree-wrapper"
       And I click on button with text "Înregistrează-te"
       Then I should see an element with text "Acest câmp este obligatoriu."

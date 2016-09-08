@@ -341,8 +341,12 @@ public class GenericSteps extends TestBase {
 
     }
 
-
-
+    @And("^I click on label with id \"([^\"]*)\"$")
+    public void iClickOnLabelWithId(String arg0) throws InterruptedException {
+        WebLocator labelF = new WebLocator().setId("agree-wrapper");
+        Thread.sleep(2000);
+        labelF.assertClick();
+    }
 }
 
 
