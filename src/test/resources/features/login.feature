@@ -2,6 +2,7 @@ Feature: Login
 
   Scenario: Successfully login
     Given I open url"https://dev2.farmec.ro/autentificare.html"
+    And I click on button with text "Am înţeles"
     And I login with "testare1984@gmail.com"/"parola"
     Then I should see an element with text "Contul meu"
 
