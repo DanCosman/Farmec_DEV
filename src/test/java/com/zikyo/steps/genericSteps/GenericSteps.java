@@ -51,6 +51,12 @@ public class GenericSteps extends TestBase {
         link.assertClick();
     }
 
+    @And("^I click on link with class \"([^\"]*)\"$")
+    public void iClickOnLinkWithClass(String arg0)  {
+        WebLocator linkImage = new WebLocator("image");
+        linkImage.click();
+    }
+
     @And("^I click on Outlet$")
     public void biClickOnOutlet() {
         WebLocator linkO = new WebLocator("image category text-center");
